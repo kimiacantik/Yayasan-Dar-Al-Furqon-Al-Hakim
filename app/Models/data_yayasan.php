@@ -25,6 +25,11 @@ class data_yayasan extends Model
 protected $casts = [
         'published' => 'boolean',
     ];
+
+public function getRouteKeyName()
+ { 
+return 'slug';
+ }
     public function toSearchableArray(): array
     {
        return [
